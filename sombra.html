@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>TWC</title>
+
+		<script src="http://basic-web-components.github.io/components/
+		webcomponentsjs/webcomponents.js"></script>
+		<link rel="import" 
+		href="http://basic-web-components.github.io/components/
+		polymer/polymer.html">
+	</head>
+	<body>
+		<style type="text/css">
+			strong {
+				color: green !important;
+				text-transform: uppercase !important;}
+		</style>
+		<h1 style="margin-left: 30px">Tutorial Web Components</h1>
+
+		<h3 style="margin-left: 60px">Creación y uso de un nuevo Web Component</h3>
+		<polymer-element name="my-component" noscript>
+  			<template>
+    			Aprender Web Components es
+    			<em><strong><content></content></strong></em>!<br>
+  			</template>
+		</polymer-element>
+		<div style="margin-left: 60px">
+			<my-component><span style="color: red">
+			muy fácil</span></my-component>
+			<my-component><span style="color: blue">
+			divetido</span></my-component>
+		</div>
+		<p style="margin-left: 60px">Web Components <strong>facilita</strong>
+		en gran medida el trabajo <br> a los desarrolladores y diseñadores de páginas Web.</p>
+	</body>
+</html>

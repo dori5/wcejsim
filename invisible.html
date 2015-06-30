@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>TWC</title>
+
+		<script src="http://basic-web-components.github.io/components/
+		webcomponentsjs/webcomponents.js"></script>
+		<link rel="import" 
+		href="http://basic-web-components.github.io/components/
+		basic-framed-content/basic-framed-content.html">
+		<link rel="import" 
+		href="http://basic-web-components.github.io/components/
+		basic-culture-selector/basic-culture-selector.html">
+		<link rel="import" 
+		href="http://basic-web-components.github.io/components/
+		basic-calendar-month/basic-calendar-month.html">
+	</head>
+	<body>
+		<h1 style="margin-left: 30px">Tutorial Web Components</h1>
+
+		<div style="float: left; width: 300px; margin-left: 40px">
+			<h3 style="text-align: center">Selector de idioma oculto (EN)</h3>
+			<basic-framed-content>
+				<template is="auto-binding">
+  					<basic-culture-selector culture="{{idioma}}" name="en" 
+  					style="display: none;"></basic-culture-selector>
+  					<basic-calendar-month style="margin-left: 20px" 
+  					culture="{{idioma}}"></basic-calendar-month>
+				</template>
+			</basic-framed-content>	
+		</div>
+		<div style="float: left; width: 300px; margin-left: 40px">
+			<h3 style="text-align: center">Selector de idioma a la vista</h3>
+			<basic-framed-content>
+				<template is="auto-binding">
+  					<basic-culture-selector culture="{{idioma}}" name="en" 
+  					style="display: block;"></basic-culture-selector>
+  					<basic-calendar-month style="margin-left: 20px" 
+  					culture="{{idioma}}"></basic-calendar-month>
+				</template>
+			</basic-framed-content>	
+		</div>
+	</body>
+</html>
